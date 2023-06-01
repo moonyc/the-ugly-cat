@@ -2,6 +2,7 @@
 import styles from './banner.module.css'
 import cls from 'classnames'
 
+
 export default function Banner (props) {
     const {title, subTitle, imgUrl} = props
 

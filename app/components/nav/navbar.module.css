@@ -1,0 +1,148 @@
+.container {
+    color: var(--white10);
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(to bottom, var(--gradient-stops));
+  
+    --gradient-from: var(--black);
+    --gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
+    width: 100%;
+    z-index: 50;
+  }
+  
+  .wrapper {
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+    display: flex;
+    padding: 1.25rem /* 20px */;
+  }
+  
+  .logoLink {
+    display: flex;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    color: var(--white10);
+    margin-bottom: 1rem /* 16px */;
+  }
+  .heading {
+    padding-left: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.theUglyCat {
+    font-weight: 200;
+    font-size: 1rem;
+}
+  
+  .navItems {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 1.5rem /* 24px */;
+    font-size: 0.875rem /* 14px */;
+    font-size: 1rem;
+  
+    line-height: 1.25rem /* 20px */;
+    list-style: none;
+  }
+  
+  .navItem {
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin-right: 0.75rem /* 12px */;
+  }
+  
+  .navItem2 {
+    cursor: pointer;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+
+  }
+  
+  .navContainer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: auto;
+  }
+  
+  .usernameBtn {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: var(--white);
+  }
+  
+  .username {
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+  }
+  
+  .navDropdown {
+    position: absolute;
+    margin-left: auto;
+    margin-top: 0.5rem /* 8px */;
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+    padding-right: 0.5rem;
+    background-color: var(--black50);
+    border-width: 1px;
+    color: var(--white);
+    border-radius: 0.25rem /* 4px */;
+  
+    border-color: var(--blue);
+  
+    box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000),
+      var(--shadow30);
+  }
+  
+  .linkName {
+    margin-top: 1rem;
+    position: relative;
+    background: var(--gray40);
+    color: var(--white10);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    padding: 1rem 1.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  .linkName:hover {
+    text-decoration: underline;
+  }
+  
+  .lineWrapper {
+    padding-top: 0.5rem /* 8px */;
+    padding-bottom: 0.5rem /* 8px */;
+  }
+  
+  @media (min-width: 768px) {
+    .wrapper {
+      padding-left: 4rem /* 64px */;
+      padding-right: 4rem /* 64px */;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .logoLink {
+      margin-bottom: 0px;
+    }
+  
+    .navItems {
+      margin-left: 3rem /* 48px */;
+    }
+  
+    .navItem {
+      margin-right: 1.25rem /* 20px */;
+    }
+  }
