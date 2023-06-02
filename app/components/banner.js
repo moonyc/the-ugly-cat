@@ -13,7 +13,7 @@ export default function Banner (props) {
         <div className={styles.container}>
             <div className={styles.leftWrapper}>
                 <div className={styles.left}>
-                <div className={cls( "glass",styles.glassWrapper)}s>
+                <div className={cls( "glass",styles.glassWrapper)}>
                     <div className={styles.nseriesWrapper}>
                         <p className={styles.firstLetter}> The </p>
                         <p className={styles.series}> UGLY<br/>CAT</p>

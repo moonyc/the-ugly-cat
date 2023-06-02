@@ -12,7 +12,7 @@
   
   .wrapper {
     padding-left: 1rem /* 16px */;
-    padding-right: 1rem /* 16px */;
+    
     display: flex;
     padding: 1.25rem /* 20px */;
   }
@@ -31,8 +31,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 10rem;
-    cursor: pointer;
+    
 }
 
 .theUglyCat {
@@ -44,7 +43,7 @@
     display: flex;
     flex-direction: row;
     width: 50%;
-    margin-left: 1.5rem /* 24px */;
+    margin-left: 0rem /* 24px */;
     font-size: 0.875rem /* 14px */;
     font-size: 1rem;
   
@@ -70,6 +69,8 @@
     display: flex;
     align-items: flex-start;
     margin-left: auto;
+    margin-right: 0rem;
+    
   }
   
   .usernameBtn {
@@ -86,20 +87,7 @@
   
   .navDropdown {
     position: absolute;
-    margin-left: auto;
-    margin-top: 0.5rem /* 8px */;
-    padding-top: 0.5rem /* 8px */;
-    padding-bottom: 0.5rem /* 8px */;
-    padding-right: 0.5rem;
-    background-color: var(--black50);
-    border-width: 1px;
-    color: var(--white);
-    border-radius: 0.25rem /* 4px */;
-  
-    border-color: var(--blue);
-  
-    box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000),
-      var(--shadow30);
+    width: 100%;
   }
   
   .linkName {
@@ -112,7 +100,7 @@
     border: none;
     letter-spacing: 0.1rem;
     font-size: 0.7rem;
-    padding: 1rem 1.4rem;
+    padding: 1rem 1.5rem;
     transition: 0.2s;
     cursor: pointer;
   }
