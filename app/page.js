@@ -3,21 +3,24 @@ import styles from './page.module.css'
 import Banner from '@/components/banner'
 import NavBar from '../components/nav/navbar'
 import SectionCards from '../components/card/section-cards'
-import { getPopularVideos, getVideos } from '../lib/videos'
+import {  getVideos } from '../lib/videos'
 
 
 
 export  default async function Home() {
+  
   const historyVideos = await getVideos('alessandro barbero')
   const newyorkVideos = await getVideos('new york city skyline shorts')
   const johnnyharrisVideos = await getVideos('johnny harris videos')
   const breakingItalyVideos= await getVideos('Breaking Italy Night')
-  const popularVideos = await getPopularVideos()
+  // const popularVideos = await getPopularVideos()
 
+  
+ 
   return (
     <div className={styles.main}>
     
-    <NavBar username="theuglycat@sashacorp.dev" />
+    <NavBar/>
       <Banner  
         title="Sasha and Taylor Swift" 
         subTitle="Dictators on Directors"

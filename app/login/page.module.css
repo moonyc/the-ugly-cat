@@ -89,12 +89,12 @@
 }
 
 .emailInput {
+  margin-top: 3rem;
   background-color: transparent;
   border: 1px solid var(--green10);
   border-radius: 5px;
   padding: 1rem 3rem;
   color: white;
-  margin-top: 2rem;
   
 }
 .emailInput::placeholder {
@@ -102,9 +102,12 @@
 }
 
 .userMsg {
-  margin-top: 0.25rem /* 4px */;
+  margin-top: 0.3rem /* 4px */;
   margin-bottom: 0.25rem /* 4px */;
   color: var(--white20);
+  font-weight: 200;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
 }
 
 
