@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { magic } from "@/lib/magic-client";
 import Loading from "@/components/loading/loading";
@@ -19,5 +19,5 @@ export default function MyApp({ Component, pageProps }) {
         }
         handleLoggedIn()
     }, [router])
-    return <React.StrictMode>isLoading ? <Loading/> : <Component {...pageProps} /></React.StrictMode>
+    return isLoading ? <Loading/> : <Component {...pageProps} />
 }
