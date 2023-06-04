@@ -1,5 +1,5 @@
 "use client"
-import { useState} from 'react'
+import {  useState} from 'react'
 import Link from 'next/link'
 import styles from './page.module.css'
 import Image from 'next/image'
@@ -7,26 +7,13 @@ import cls from 'classnames'
 import { useRouter } from 'next/navigation'
 import { magic } from '@/lib/magic-client'
 
-export default function login() {
+export default function Login() {
     const router = useRouter()
     const [email, setEmail] = useState("")
     const [userMsg, setUserMsg] = useState("")
     const [isLoading, setIsLoading] = useState(false)
 
-    // ADD NAVIGATION PARAMS
-    // useEffect(() => {
-    //     const handleComplete = () => {
-    //         setIsLoading(false)
-    //     }
-    //     router.events.on("routeChangeComplete", handleComplete)
-    //     router.events.on("routeChangeError", handleComplete)
-
-    //     return () => {
-    //         router.events.off("routerChangeComplete", handleComplete)
-    //         router.events.off("routeChangeError", handleComplete)
-    //     }
-    // }, [router])
-    
+ 
     const handleOnChangeEmail =(e) => {
         setUserMsg("")
         const email = e.target.value;

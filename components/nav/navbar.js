@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import styles from './navbar.module.css'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 import { magic } from '@/lib/magic-client';
 
 const NavBar = (props) => {
@@ -14,7 +13,7 @@ const NavBar = (props) => {
     useEffect(() => {
         async function getUserName() {
             try {
-                const { email } = await magic.user.getMetadata()
+                const { email } = await magic.user.getInfo()
                 if(email) {
                     setUserName(email)
                 } 
